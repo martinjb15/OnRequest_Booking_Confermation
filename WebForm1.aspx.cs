@@ -37,7 +37,7 @@ namespace OnRequest_Booking_Confermation
             string dbinstance = "";
             string query = "";
             dbinstance = " -tourplan";
-            string connetionString = "Server=" + dbinstance + ";Database=" + dbname + ";User ID=tpwebuser;Password=cf5&web22";
+            string connetionString = "Server=" + dbinstance + ";Database=" + dbname + ";User ID=;Password=";
             SqlConnection cnn = new SqlConnection(connetionString);
 
             //and bhd.agent = '"+textbox3.Text.ToString().Trim() +"'
@@ -112,7 +112,7 @@ namespace OnRequest_Booking_Confermation
             dbname = " _tours_ireland";
             string dbinstance = "";
             dbinstance = " -tourplan";
-            string connetionString = "Server=" + dbinstance + ";Database=" + dbname + ";User ID=tpwebuser;Password=cf5&web22";
+            string connetionString = "Server=" + dbinstance + ";Database=" + dbname + ";User ID=;Password=";
             SqlConnection cnn = new SqlConnection(connetionString);
             cnn.Open();
             foreach (GridViewRow row in Gridview1.Rows)
